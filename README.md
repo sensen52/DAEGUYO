@@ -30,7 +30,7 @@
 
 ##### 이재민(조장)  : FrontEnd,BackEnd (FrontEnd(매장선택, 메뉴상세), BackEnd(기본 레이아웃 및 틀 정리, RESTful api, 매장결제승인,회원가,입장바구니,매장선택)
 ##### 백승하(조원2) : FrontEnd,BackEnd (FrontEnd(매장결제 승인, 입점회원가입,로그인) , BackEnd(입점회원가입,회원정보수정 BackEnd)
-##### 정세인(조원3) : FrontEnd,BackEnd (FrontEnd(웹 기획, 메인페이지 구현) , BackEnd(로그인,주문내역 BackEnd)
+##### 정세인(조원3) : FrontEnd,BackEnd (FrontEnd(웹 기획, 메인페이지 구현,웹 반응형) , BackEnd(로그인,주문내역 BackEnd,웹배포(윈도우))
 ##### 박민영(조원4) : FrontEnd,BackEnd (FrontEnd(마이페이지, 주문내역) , BackEnd(메뉴상세,마이페이지 BackEnd)
 <br/>
 
