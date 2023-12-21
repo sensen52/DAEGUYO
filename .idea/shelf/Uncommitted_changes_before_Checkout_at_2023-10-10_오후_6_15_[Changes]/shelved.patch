@@ -1,0 +1,205 @@
+Index: src/main/resources/templates/memberJoin.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n  <title>대구요 회원가입</title>\r\n  <link rel=\"stylesheet\" href=\"/css/reset.css\" />\r\n  <link rel=\"stylesheet\" href=\"/css/style.css\" />\r\n  <link rel=\"stylesheet\" href=\"/css/memberJoin_style.css\" />\r\n  <!-- 구글아이콘 -->\r\n  <link rel=\"stylesheet\"\r\n    href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200\" />\r\n  <style>\r\n    .material-symbols-outlined {\r\n      font-variation-settings:\r\n        'FILL' 0,\r\n        'wght' 400,\r\n        'GRAD' 0,\r\n        'opsz' 24\r\n    }\r\n  </style>\r\n  <script src=\"https://kit.fontawesome.com/c53a5f44b2.js\"></script>\r\n  <script src=\"https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js\"></script>\r\n  <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css\" />\r\n  <script src=\"https://code.jquery.com/jquery-3.6.1.min.js\"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n  <div id=\"warp\">\r\n    <div class=\"side_menu\">\r\n      <div class=\"ide_login\">\r\n        <a href=\"#\"> 안녕하세요! <strong>SEIN</strong>님</a>\r\n        <a href=\"#\" class=\"close\">&times;</a>\r\n      </div>\r\n      <div class=\"panner\">\r\n        <ul>\r\n          <li><a href=\"javascript:void(0);\">홈</a></li>\r\n          <li><a href=\"javascript:void(0);\">주문</a></li>\r\n          <li><a href=\"javascript:void(0);\">매장찾기</a></li>\r\n          <li><a href=\"javascript:void(0);\">마이페이지</a></li>\r\n          <li><a href=\"javascript:void(0);\">로그아웃</a></li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"map_bg\">\r\n      <div id=\"map\">\r\n        <div class=\"map_search\">\r\n          <input value=\"지번, 도로, 건물명으로 검색\" />\r\n          <button>검색</button>\r\n        </div>\r\n\r\n        <div class=\"current_location_group\">\r\n          <img src=\"/images/gps.png\" alt=\"\" class=\"gps\">\r\n          <div class=\"current_location\">현재 위치에서 찾기</div>\r\n        </div>\r\n\r\n        <div class=\"location_select\">\r\n          대구 광역시 동구 동촌로55길36\r\n        </div>\r\n\r\n        <div class=\"location_complete\">선택하기</div>\r\n      </div>\r\n    </div>\r\n\r\n    <header>\r\n      <div class=\"align\">\r\n        <a href=\"javascript:void(0);\"><img src=\"/images/login_logo.png\" alt=\"로고\" /></a>\r\n      </div>\r\n    </header>\r\n    <!-- 김승훈 작업 시작 -->\r\n    <!-- 메인(조인헤더) -->\r\n    <main>\r\n      <section class=\"section_join_header\">\r\n        <div class=\"info_text\">\r\n          <span><a href=\"/index copy.html\">홈</a></span>\r\n          <span>></span>\r\n          <span><a href=\"/ceoJoin.html\" style=\"color:#01cafe;\">회원가입</a></span>\r\n        </div>\r\n        <div class=\"join_step\">\r\n          <div class=\"step_box\">\r\n            <div class=\"img_container\">\r\n              <div class=\"img_box\"><img src=\"/images/account.png\" alt=\"\"></div>\r\n            </div>\r\n            <div class=\"step_text\">\r\n              <span class=\"step_head\">STEP1</span>\r\n              <br />\r\n              <span class=\"step_foot\">정보인증</span>\r\n            </div>\r\n          </div>\r\n          <div class=\"sign_box\"><span class=\"material-symbols-outlined\">\r\n              chevron_right\r\n            </span></div>\r\n          <div class=\"step_box\">\r\n            <div class=\"img_container\">\r\n              <div class=\"img_box\"><img src=\"/images/writing.png\" alt=\"\"></div>\r\n            </div>\r\n            <div class=\"step_text\">\r\n              <span class=\"step_head\">STEP2</span>\r\n              <br />\r\n              <span class=\"step_foot\">정보입력</span>\r\n            </div>\r\n          </div>\r\n          <div class=\"sign_box\"><span class=\"material-symbols-outlined\">\r\n              chevron_right\r\n            </span></div>\r\n          <div class=\"step_box\">\r\n            <div class=\"img_container\">\r\n              <div class=\"img_box\"><img src=\"/images/checklist.png\" alt=\"\"></div>\r\n            </div>\r\n            <div class=\"step_text\">\r\n              <span class=\"step_head\">STEP3</span>\r\n              <br />\r\n              <span class=\"step_foot\">가입완료</span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </section>\r\n    </main>\r\n    <!-- 메인(조인헤더 끝) -->\r\n    <section class=\"section_enterInfo\">\r\n      <div class=\"section_header\">회원정보</div>\r\n      <div class=\"big_container\"> <!--정보입력창-->\r\n        <div class=\"name_container\">\r\n          <div class=\"name_box\">이름</div>\r\n          <div class=\"name_input\">\r\n            <input type=\"text\" id=\"name\">\r\n            <button>\r\n              <img src=\"/images/cancel.png\" alt=\"\">\r\n            </button>\r\n          </div>\r\n        </div>\r\n        <div class=\"year_container\">\r\n          <div class=\"year_box\">생년월일</div>\r\n          <input type=\"text\" placeholder=\"YEAR\" id=\"year\">\r\n          <select id=\"month\" name=\"month\">\r\n            <option value=\"\" disabled selected>MONTH</option>\r\n            <option value=\"1\">1월</option>\r\n            <option value=\"2\">2월</option>\r\n            <option value=\"3\">3월</option>\r\n            <option value=\"4\">4월</option>\r\n            <option value=\"5\">5월</option>\r\n            <option value=\"6\">6월</option>\r\n            <option value=\"7\">7월</option>\r\n            <option value=\"8\">8월</option>\r\n            <option value=\"9\">9월</option>\r\n            <option value=\"10\">10월</option>\r\n            <option value=\"11\">11월</option>\r\n            <option value=\"12\">12월</option>\r\n          </select>\r\n          <input type=\"text\" placeholder=\"DAY\" id=\"day\">\r\n        </div>\r\n        <div class=\"email_container\">\r\n          <div class=\"email_box\">이메일</div>\r\n          <div class=\"email_input\">\r\n            <input type=\"text\" placeholder=\"daguyo\" id=\"email_id\">\r\n            <span class=\"material-symbols-outlined\" id=\"email_gol\">\r\n              alternate_email\r\n            </span>\r\n            <select id=\"email_adr\" name=\"email_adr\">\r\n              <option value=\"naver.com\">naver.com</option>\r\n              <option value=\"google.com\">google.com</option>\r\n              <option value=\"hanmail.net\">hanmail.net</option>\r\n              <option value=\"nate.com\">nate.com</option>\r\n              <option value=\"kakao.com\">kakao.com</option>\r\n            </select>\r\n            <div id=\"email_btn\"><button onclick=\"\">인증</button></div>\r\n          </div>\r\n        </div>\r\n        <div class=\"password1_container\">\r\n          <div class=\"password1_box\">비밀번호</div>\r\n          <div class=\"password1_input\">\r\n            <input type=\"password\" id=\"password1\">\r\n            <button id=\"pass1_btn\">\r\n              <img src=\"/images/eye.png\" alt=\"\" id=\"eyeImage1\">\r\n            </button>\r\n          </div>\r\n        </div>\r\n        <div class=\"password2_container\">\r\n          <div class=\"password2_box\">비밀번호</div>\r\n          <div class=\"password2_input\">\r\n            <input type=\"password\" id=\"password2\">\r\n            <button id=\"pass2_btn\">\r\n              <img src=\"/images/eye.png\" alt=\"\" id=\"eyeImage2\">\r\n            </button>\r\n          </div>\r\n        </div>\r\n        <div class=\"phone_container\">\r\n          <div class=\"phone_box\">휴대폰 번호</div>\r\n          <div class=\"phone_input\">\r\n            <input type=\"tel\" id=\"phone\">\r\n            <button onclick=\"\" id=\"phone_btn\">인증</button>\r\n          </div>\r\n\r\n        </div>\r\n        <div class=\"addr_container\">\r\n          <div class=\"addr_box\">주소</div>\r\n          <div class=\"addr\">\r\n            <label for=\"addr\"></label>\r\n            <input type=\"text\" id=\"addr_number\" placeholder=\"우편번호\" />\r\n            <div id=\"addr_btn\">\r\n              <input type=\"button\" onclick=\"Postcode()\" value=\"우편번호 찾기\" />\r\n            </div>\r\n            <div id=\"layer\"\r\n              style=\"display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;\">\r\n              <img src=\"//t1.daumcdn.net/postcode/resource/images/close.png\" id=\"btnCloseLayer\"\r\n                style=\"cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1;width:20px;height:20px;\"\r\n                onclick=\"closeDaumPostcode()\" alt=\"닫기 버튼\">\r\n            </div>\r\n          </div>\r\n          <div class=\"address\">\r\n            <input type=\"text\" id=\"address\" placeholder=\"주소\" />\r\n          </div>\r\n          <div class=\"address\">\r\n            <input type=\"text\" id=\"detailAddress\" placeholder=\"상세주소\" />\r\n            <input type=\"text\" id=\"extraAddress\" placeholder=\"참고항목\" />\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n    </section>\r\n\r\n\r\n    <section class=\"section_agree\">\r\n      <div class=\"agree_big_container\">\r\n        <div class=\"all_agree\">\r\n          <button class=\"all_agree_btn\"><img src=\"/images/check.png\" alt=\"\"></button>\r\n          <div class=\"all_agree_text\">아래의 내용에 모두 동의합니다.</div>\r\n        </div>\r\n        <div class=\"agree_container\">\r\n          <div class=\"agree_box\">\r\n            <button id=\"plz1\"><img src=\"/images/nemo.png\" alt=\"\"></button>\r\n            <div class=\"agree_text\">이용약관, 개인정보 수집/이용동의</div>\r\n            <div class=\"open_box\"><a href=\"https://policy.naver.com/policy-mobile/term.html?type=1?type=1\"\r\n                target=\"_blank\">확인하기</a></div>\r\n          </div>\r\n          <div class=\"agree_box\">\r\n            <button id=\"plz2\"><img src=\"/images/nemo.png\" alt=\"\"></button>\r\n            <div class=\"agree_text\">만 14세 이상입니다.</div>\r\n          </div>\r\n          <div class=\"agree_box\">\r\n            <button id=\"cho1\"><img src=\"/images/nemo.png\" alt=\"\"></button>\r\n            <div class=\"agree_text\">위치기반서비스 약관동의(선택)</div>\r\n            <div class=\"open_box\"><a href=\"https://policy.naver.com/policy-mobile/term.html?type=1?type=1\"\r\n                target=\"_blank\">보기</a></div>\r\n          </div>\r\n          <div class=\"agree_box\">\r\n            <button id=\"cho2\"><img src=\"/images/nemo.png\" alt=\"\"></button>\r\n            <div class=\"agree_text\">홍보성 정보 수신동의(선택)</div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"agree_submit_zone\">\r\n        <button onclick=\"\" class=\"agree_submit_box\">회원가입</button>\r\n        <button onclick=\"\" class=\"agree_submit_cancel\">취소</button>\r\n      </div>\r\n    </section>\r\n\r\n\r\n    <!-- 김승훈 작업 끝 -->\r\n    <footer>\r\n      <div class=\"align\">\r\n        <div class=\"sns\">\r\n          <a href=\"javascript:void(0);\"><img src=\"/images/facebook.png\" alt=\"페이스북\"></a>\r\n          <a href=\"javascript:void(0);\"><img src=\"/images/instagram.png\" alt=\"인스타그램\"></a>\r\n        </div>\r\n        <div class=\"footer_logo\">\r\n          <a href=\"javascript:void(0);\">\r\n            <img src=\"/images/footer_logo.png\" alt=\"하단로고\">\r\n          </a>\r\n          <div>1661 - 5270</div>\r\n        </div>\r\n        <div class=\"footer_nav\">\r\n          <ul>\r\n            <li><a href=\"javascript:void(0);\">이용약관</a></li>\r\n            <li><a href=\"javascript:void(0);\">개인정보처리방침</a></li>\r\n            <li><a href=\"javascript:void(0);\">위치기반서비스</a></li>\r\n            <li><a href=\"javascript:void(0);\">고객센터</a></li>\r\n            <li><a href=\"javascript:void(0);\">인재채용</a></li>\r\n            <li><a href=\"javascript:void(0);\">단체주문</a></li>\r\n          </ul>\r\n        </div>\r\n        <div class=\"copyright\">\r\n          <div>\r\n            주식회사 대구요는 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품/ 거래정보 및 거래와 관련하여 <br>\r\n            대구요에 등록된 판매자의 고의 또는 과실로 소비자에게 발생하는 손해에 대해 주식회사 대구요는 책임을 지지 않습니다.<br>\r\n            상품 및 거래에 관하여 보다 정확한 정보는 해당 판매자에게 직접 확인하여 주시기 바랍니다.\r\n            <p>Copyright DagueYO. All Rights Reserved.</p>\r\n          </div>\r\n          <div class=\"familysite\">\r\n            <select name=\"\" id=\"\" class=\"select2\">\r\n              <option value=\"\">Global site</option>\r\n              <option value=\"\">KOREA</option>\r\n              <option value=\"\">USA</option>\r\n            </select>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </footer>\r\n  </div>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js\"></script>\r\n    <script src=\"/js/index.js\"></script>\r\n    <script src=\"/js/memberJoin.js\"></script>\r\n</body>\r\n\r\n\r\n</html>
+===================================================================
+diff --git a/src/main/resources/templates/memberJoin.html b/src/main/resources/templates/memberJoin.html
+--- a/src/main/resources/templates/memberJoin.html	
++++ b/src/main/resources/templates/memberJoin.html	
+@@ -133,30 +133,30 @@
+             </button>
+           </div>
+         </div>
+-        <div class="year_container">
+-          <div class="year_box">생년월일</div>
+-          <input type="text" placeholder="YEAR" id="year">
+-          <select id="month" name="month">
+-            <option value="" disabled selected>MONTH</option>
+-            <option value="1">1월</option>
+-            <option value="2">2월</option>
+-            <option value="3">3월</option>
+-            <option value="4">4월</option>
+-            <option value="5">5월</option>
+-            <option value="6">6월</option>
+-            <option value="7">7월</option>
+-            <option value="8">8월</option>
+-            <option value="9">9월</option>
+-            <option value="10">10월</option>
+-            <option value="11">11월</option>
+-            <option value="12">12월</option>
+-          </select>
+-          <input type="text" placeholder="DAY" id="day">
+-        </div>
++<!--        <div class="year_container">-->
++<!--          <div class="year_box">생년월일</div>-->
++<!--          <input type="text" placeholder="YEAR" id="year">-->
++<!--          <select id="month" name="month">-->
++<!--            <option value="" disabled selected>MONTH</option>-->
++<!--            <option value="1">1월</option>-->
++<!--            <option value="2">2월</option>-->
++<!--            <option value="3">3월</option>-->
++<!--            <option value="4">4월</option>-->
++<!--            <option value="5">5월</option>-->
++<!--            <option value="6">6월</option>-->
++<!--            <option value="7">7월</option>-->
++<!--            <option value="8">8월</option>-->
++<!--            <option value="9">9월</option>-->
++<!--            <option value="10">10월</option>-->
++<!--            <option value="11">11월</option>-->
++<!--            <option value="12">12월</option>-->
++<!--          </select>-->
++<!--          <input type="text" placeholder="DAY" id="day">-->
++<!--        </div>-->
+         <div class="email_container">
+           <div class="email_box">이메일</div>
+           <div class="email_input">
+-            <input type="text" placeholder="daguyo" id="email_id">
++            <input type="text" placeholder="daguyo" id="email_id" name="u_email">
+             <span class="material-symbols-outlined" id="email_gol">
+               alternate_email
+             </span>
+Index: src/main/resources/static/js/memberJoin.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//이름 버튼\r\nvar cancelButton = document.querySelector(\".name_input button\");\r\nvar nameInput = document.getElementById(\"name\");\r\n\r\ncancelButton.addEventListener(\"click\", function () {\r\n  // 입력란의 값을 지웁니다.\r\n  nameInput.value = \"\";\r\n});\r\n\r\n// 비밀번호1 버튼\r\nvar passwordInput1 = document.getElementById(\"password1\");\r\nvar toggleButton1 = document.getElementById(\"pass1_btn\");\r\nvar eyeImage1 = document.getElementById(\"eyeImage1\");\r\nvar isPasswordVisible1 = false;\r\n\r\n// 버튼 클릭 시 이벤트 핸들러를 추가합니다.\r\ntoggleButton1.addEventListener(\"click\", function () {\r\n  // 비밀번호1 입력란의 현재 타입을 확인합니다.\r\n  var currentType1 = passwordInput1.getAttribute(\"type\");\r\n\r\n  // 현재 타입이 \"password\"라면 \"text\"로 변경하여 비밀번호를 표시하고, 그렇지 않다면 \"password\"로 변경하여 비밀번호를 숨깁니다.\r\n  if (currentType1 === \"password\") {\r\n    passwordInput1.setAttribute(\"type\", \"text\");\r\n    // 이미지를 숨김 아이콘으로 변경합니다.\r\n    eyeImage1.src = \"./images/off-eye.png\";\r\n  } else {\r\n    passwordInput1.setAttribute(\"type\", \"password\");\r\n    // 이미지를 보임 아이콘으로 변경합니다.\r\n    eyeImage1.src = \"./images/eye.png\";\r\n  }\r\n});\r\n\r\n// 비밀번호2 버튼\r\nvar passwordInput2 = document.getElementById(\"password2\");\r\nvar toggleButton2 = document.getElementById(\"pass2_btn\");\r\nvar eyeImage2 = document.getElementById(\"eyeImage2\");\r\nvar isPasswordVisible2 = false;\r\n\r\n// 버튼 클릭 시 이벤트 핸들러를 추가합니다.\r\ntoggleButton2.addEventListener(\"click\", function () {\r\n  // 비밀번호2 입력란의 현재 타입을 확인합니다.\r\n  var currentType2 = passwordInput2.getAttribute(\"type\");\r\n\r\n  // 현재 타입이 \"password\"라면 \"text\"로 변경하여 비밀번호를 표시하고, 그렇지 않다면 \"password\"로 변경하여 비밀번호를 숨깁니다.\r\n  if (currentType2 === \"password\") {\r\n    passwordInput2.setAttribute(\"type\", \"text\");\r\n    // 이미지를 숨김 아이콘으로 변경합니다.\r\n    eyeImage2.src = \"./images/off-eye.png\";\r\n  } else {\r\n    passwordInput2.setAttribute(\"type\", \"password\");\r\n    // 이미지를 보임 아이콘으로 변경합니다.\r\n    eyeImage2.src = \"./images/eye.png\";\r\n  }\r\n});\r\n\r\n\r\n// 입력창\r\nfunction Postcode() {\r\n  new daum.Postcode({\r\n    oncomplete: function (data) {\r\n      var addr = '';\r\n      var extraAddr = '';\r\n\r\n      if (data.userSelectedType === 'R') {\r\n        addr = data.roadAddress;\r\n      } else {\r\n        addr = data.jibunAddress;\r\n      }\r\n\r\n      if (data.userSelectedType === 'R') {\r\n        if (data.bname !== '' && /[동|로|가]$/g.test(data.bname)) {\r\n          extraAddr += data.bname;\r\n        }\r\n        if (data.buildingName !== '' && data.apartment === 'Y') {\r\n          extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);\r\n        }\r\n        if (extraAddr !== '') {\r\n          extraAddr = ' (' + extraAddr + ')';\r\n        }\r\n        document.getElementById(\"extraAddress\").value = extraAddr;\r\n      } else {\r\n        document.getElementById(\"extraAddress\").value = '';\r\n      }\r\n\r\n      // 수정된 부분: 주소 정보를 각각의 입력란에 설정\r\n      document.getElementById(\"addr_number\").value = data.zonecode;\r\n      document.getElementById(\"address\").value = addr;\r\n      document.getElementById(\"detailAddress\").value = ''; // 상세주소 초기화\r\n    }\r\n  }).open();\r\n}\r\n\r\n\r\n\r\n// 동의버튼들\r\n\r\n// 1 클릭시 이미지 변경\r\n\r\n// // 전체동의버튼\r\n//   document.addEventListener(\"DOMContentLoaded\", function() {\r\n//     const allAgreeButton = document.querySelector(\".all_agree_btn\");\r\n//     const allAgreeImage = allAgreeButton.querySelector(\"img\");\r\n\r\n//     let isButtonClicked = false;\r\n\r\n//     allAgreeButton.addEventListener(\"click\", function() {\r\n//       isButtonClicked = !isButtonClicked;\r\n\r\n//       if (isButtonClicked) {\r\n//         allAgreeImage.src = \"./images/check.png\"; \r\n//       } else {\r\n//         allAgreeImage.src = \"./images/done_check.png\"; \r\n//       }\r\n//     });\r\n//   });\r\n\r\n//   // 다른동의버튼들\r\n//   document.addEventListener(\"DOMContentLoaded\", function() {\r\n//   const agreeButtons = document.querySelectorAll(\".agree_box button\");\r\n\r\n//   for (const agreeButton of agreeButtons) {\r\n//     agreeButton.addEventListener(\"click\", function() {\r\n//       if (agreeButton.classList.contains(\"checked\")) {\r\n//         agreeButton.classList.remove(\"checked\");\r\n//         agreeButton.querySelector(\"img\").src = \"./images/nemo_check.png\";\r\n//       } else {\r\n//         agreeButton.classList.add(\"checked\");\r\n//         agreeButton.querySelector(\"img\").src = \"./images/nemo.png\"; \r\n//       }\r\n//     });\r\n// }\r\n// });\r\n\r\n// //전체동의 클릭시\r\n\r\n// document.addEventListener(\"DOMContentLoaded\", function() {\r\n//     const allAgreeButton = document.querySelector(\".all_agree_btn\");\r\n\r\n//     const agreeButtons = document.querySelectorAll(\".agree_box button\");\r\n\r\n//     allAgreeButton.addEventListener(\"click\", function() {\r\n//       if (allAgreeButton.classList.contains(\"checked\")) {\r\n//         for (const agreeButton of agreeButtons) {\r\n//           agreeButton.classList.remove(\"checked\");\r\n//         }\r\n//       } else {\r\n//         for (const agreeButton of agreeButtons) {\r\n//           agreeButton.classList.add(\"checked\");\r\n//         }\r\n//       }\r\n\r\n//       allAgreeButton.classList.toggle(\"checked\");\r\n//     });\r\n\r\n//     for (const agreeButton of agreeButtons) {\r\n//       agreeButton.addEventListener(\"click\", function() {\r\n//         agreeButton.classList.toggle(\"checked\");\r\n//       });\r\n//     }\r\n//   });\r\n\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", function () {\r\n  const allAgreeButton = document.querySelector(\".all_agree_btn\");\r\n  const allAgreeImage = allAgreeButton.querySelector(\"img\");\r\n  let isAllAgreeClicked = false;\r\n\r\n  allAgreeButton.addEventListener(\"click\", function () {\r\n    isAllAgreeClicked = !isAllAgreeClicked;\r\n\r\n    for (const agreeButton of agreeButtons) {\r\n      if (isAllAgreeClicked) {\r\n        agreeButton.classList.add(\"checked\");\r\n        changeButtonImage(agreeButton, \"./images/nemo_check.png\");\r\n      } else {\r\n        agreeButton.classList.remove(\"checked\");\r\n        changeButtonImage(agreeButton, \"./images/nemo.png\");\r\n      }\r\n    }\r\n\r\n    allAgreeButton.classList.toggle(\"checked\", isAllAgreeClicked);\r\n  });\r\n\r\n  const agreeButtons = document.querySelectorAll(\".agree_box button\");\r\n\r\n  for (const agreeButton of agreeButtons) {\r\n    agreeButton.addEventListener(\"click\", function () {\r\n      agreeButton.classList.toggle(\"checked\");\r\n      const isAllAgreed = Array.from(agreeButtons).every((button) =>\r\n        button.classList.contains(\"checked\")\r\n      );\r\n      allAgreeButton.classList.toggle(\"checked\", isAllAgreed);\r\n\r\n      // 이미지 변경 함수 호출\r\n      if (agreeButton.classList.contains(\"checked\")) {\r\n        changeButtonImage(agreeButton, \"./images/nemo_check.png\");\r\n      } else {\r\n        changeButtonImage(agreeButton, \"./images/nemo.png\");\r\n      }\r\n    });\r\n  }\r\n\r\n  // 이미지 변경 함수 정의\r\n  function changeButtonImage(button, imagePath) {\r\n    button.querySelector(\"img\").src = imagePath;\r\n  }\r\n});\r\n\r\n//제안보내기\r\ndocument.addEventListener(\"DOMContentLoaded\", function () {\r\n  // 이름, 생년월일 (year, day), 이메일 (email), 비밀번호 (password1, password2), 휴대폰 (phone) 입력 상자 요소를 가져옵니다.\r\n  const nameInput = document.getElementById(\"name\");\r\n  const yearInput = document.getElementById(\"year\");\r\n  const dayInput = document.getElementById(\"day\");\r\n  const emailInput = document.getElementById(\"email_id\");\r\n  const password1Input = document.getElementById(\"password1\");\r\n  const password2Input = document.getElementById(\"password2\");\r\n  const phoneInput = document.getElementById(\"phone\");\r\n  const plz1Button = document.getElementById(\"plz1\");\r\n  const plz2Button = document.getElementById(\"plz2\");\r\n  const submitButton = document.querySelector(\".agree_submit_box\");\r\n\r\n  // plz1, plz2 버튼 클릭 여부를 나타내는 변수를 초기화합니다.\r\n  let isPlz1Clicked = false;\r\n  let isPlz2Clicked = false;\r\n\r\n  // 입력 상자에 입력 이벤트 리스너를 추가하여 모든 입력 상자가 채워지면 버튼을 활성화합니다.\r\n  function checkInputs() {\r\n    const isAllInputsFilled =\r\n      nameInput.value.trim() !== \"\" &&\r\n      yearInput.value.trim() !== \"\" &&\r\n      dayInput.value.trim() !== \"\" &&\r\n      emailInput.value.trim() !== \"\" &&\r\n      password1Input.value.trim() !== \"\" &&\r\n      password2Input.value.trim() !== \"\" &&\r\n      phoneInput.value.trim() !== \"\";\r\n\r\n    submitButton.disabled = !(isAllInputsFilled && isPlz1Clicked && isPlz2Clicked);\r\n  }\r\n\r\n  // 입력 상자에 입력 이벤트 리스너를 추가합니다.\r\n  nameInput.addEventListener(\"input\", checkInputs);\r\n  yearInput.addEventListener(\"input\", checkInputs);\r\n  dayInput.addEventListener(\"input\", checkInputs);\r\n  emailInput.addEventListener(\"input\", checkInputs);\r\n  password1Input.addEventListener(\"input\", checkInputs);\r\n  password2Input.addEventListener(\"input\", checkInputs);\r\n  phoneInput.addEventListener(\"input\", checkInputs);\r\n\r\n  // plz1 버튼 클릭 시 이벤트 리스너를 추가합니다.\r\n  plz1Button.addEventListener(\"click\", function () {\r\n    isPlz1Clicked = !isPlz1Clicked;\r\n    plz1Button.classList.toggle(\"checked\", isPlz1Clicked);\r\n    checkInputs();\r\n  });\r\n\r\n  // plz2 버튼 클릭 시 이벤트 리스너를 추가합니다.\r\n  plz2Button.addEventListener(\"click\", function () {\r\n    isPlz2Clicked = !isPlz2Clicked;\r\n    plz2Button.classList.toggle(\"checked\", isPlz2Clicked);\r\n    checkInputs();\r\n  });\r\n\r\n  // 제안 보내기 버튼 클릭 시 naver.com으로 이동합니다.\r\n  submitButton.addEventListener(\"click\", function () {\r\n    if (submitButton.disabled === false) {\r\n      window.location.href = \"https://www.naver.com\";\r\n    }\r\n  });\r\n});\r\n\r\n\r\n\r\n\r\n
+===================================================================
+diff --git a/src/main/resources/static/js/memberJoin.js b/src/main/resources/static/js/memberJoin.js
+--- a/src/main/resources/static/js/memberJoin.js	
++++ b/src/main/resources/static/js/memberJoin.js	
+@@ -90,76 +90,6 @@
+   }).open();
+ }
+ 
+-
+-
+-// 동의버튼들
+-
+-// 1 클릭시 이미지 변경
+-
+-// // 전체동의버튼
+-//   document.addEventListener("DOMContentLoaded", function() {
+-//     const allAgreeButton = document.querySelector(".all_agree_btn");
+-//     const allAgreeImage = allAgreeButton.querySelector("img");
+-
+-//     let isButtonClicked = false;
+-
+-//     allAgreeButton.addEventListener("click", function() {
+-//       isButtonClicked = !isButtonClicked;
+-
+-//       if (isButtonClicked) {
+-//         allAgreeImage.src = "./images/check.png"; 
+-//       } else {
+-//         allAgreeImage.src = "./images/done_check.png"; 
+-//       }
+-//     });
+-//   });
+-
+-//   // 다른동의버튼들
+-//   document.addEventListener("DOMContentLoaded", function() {
+-//   const agreeButtons = document.querySelectorAll(".agree_box button");
+-
+-//   for (const agreeButton of agreeButtons) {
+-//     agreeButton.addEventListener("click", function() {
+-//       if (agreeButton.classList.contains("checked")) {
+-//         agreeButton.classList.remove("checked");
+-//         agreeButton.querySelector("img").src = "./images/nemo_check.png";
+-//       } else {
+-//         agreeButton.classList.add("checked");
+-//         agreeButton.querySelector("img").src = "./images/nemo.png"; 
+-//       }
+-//     });
+-// }
+-// });
+-
+-// //전체동의 클릭시
+-
+-// document.addEventListener("DOMContentLoaded", function() {
+-//     const allAgreeButton = document.querySelector(".all_agree_btn");
+-
+-//     const agreeButtons = document.querySelectorAll(".agree_box button");
+-
+-//     allAgreeButton.addEventListener("click", function() {
+-//       if (allAgreeButton.classList.contains("checked")) {
+-//         for (const agreeButton of agreeButtons) {
+-//           agreeButton.classList.remove("checked");
+-//         }
+-//       } else {
+-//         for (const agreeButton of agreeButtons) {
+-//           agreeButton.classList.add("checked");
+-//         }
+-//       }
+-
+-//       allAgreeButton.classList.toggle("checked");
+-//     });
+-
+-//     for (const agreeButton of agreeButtons) {
+-//       agreeButton.addEventListener("click", function() {
+-//         agreeButton.classList.toggle("checked");
+-//       });
+-//     }
+-//   });
+-
+-
+ document.addEventListener("DOMContentLoaded", function () {
+   const allAgreeButton = document.querySelector(".all_agree_btn");
+   const allAgreeImage = allAgreeButton.querySelector("img");
+@@ -261,13 +191,53 @@
+     checkInputs();
+   });
+ 
+-  // 제안 보내기 버튼 클릭 시 naver.com으로 이동합니다.
+-  submitButton.addEventListener("click", function () {
+-    if (submitButton.disabled === false) {
+-      window.location.href = "https://www.naver.com";
++});
++
++const btnJoin = document.getElementById("btnJoin");
++btnJoin.onclick = function () {
++    //주소
++    var postNumber = document.getElementById("addr").value;
++    var address = document.getElementById("address").value;
++    var extraAddress = document.getElementById("extraAddress").value;
++    var detailAddress = document.getElementById("detailAddress").value;
++    //기타 회워정보
++    var password = document.getElementById("password").value;
++    var nickname = document.getElementById("nickname").value;
++    var birth = document.getElementById("birthdate").value;
++    var phoneNumber = document.getElementById("phoneNumber").value;
++
++    // 주소합병
++    var  fullAddress = postNumber + " " + address + " " + extraAddress + " " + detailAddress;
++
++    //이메일합병
++    var email_id = document.getElementById("u_email").value;
++    if (email_id) { // 이메일 입력값이 비어있지 않은 경우에만 처리
++        var emailSelect = document.getElementById("domain-list").value;
++        var fullEmail = emailInput + "@" + emailSelect;
+     }
+-  });
+-});
++
++    // 요청 본문 데이터 객체 생성(db들어갈 내용과 같음)
++    const requestData = {
++        addr: fullAddress,
++        u_email: fullEmail,
++        password: password,
++        username: username,
++        name: name,
++        birthday: birth,
++        phone: phoneNumber
++    };
++
++    axios.post('/memberJoin', requestData) // 요청 본문에 데이터 객체 전달
++        .then(response => {
++
++            console.log(response.data);
++            window.location.href="/login";
++
++        })
++        .catch(error => {
++            console.error("Error sending data: ", error);
++        });
++}
+ 
+ 
+ 

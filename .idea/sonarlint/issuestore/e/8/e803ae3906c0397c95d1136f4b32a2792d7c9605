@@ -1,0 +1,11 @@
+
+{	java:S116"aRename this field "PrincipalDetailService" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÏæŒþÿÿÿÿ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
+Z
+java:S1874"DRemove this use of "WebSecurityConfigurerAdapter"; it is deprecated.(Ë¶Ï“
+V	java:S125R"<This block of commented-out lines of code should be removed.(“¼¬Äûÿÿÿÿ
+V	java:S125a"<This block of commented-out lines of code should be removed.(Äàÿæùÿÿÿÿ
+Q	java:S125r"<This block of commented-out lines of code should be removed.(µÎ‡Ì

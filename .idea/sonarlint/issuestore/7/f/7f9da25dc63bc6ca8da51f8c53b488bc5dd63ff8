@@ -1,0 +1,7 @@
+
+m	java:S1270"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ
+k	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñž¡žÿÿÿÿÿ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
+9
+java:S1128"Remove this duplicated import.(¶¯ø¦úÿÿÿÿ

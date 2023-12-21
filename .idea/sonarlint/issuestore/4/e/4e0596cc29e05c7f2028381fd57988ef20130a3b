@@ -1,0 +1,19 @@
+
+f	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ°Î°
+k	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÿÁ•ûÿÿÿÿ
+f	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅàıÀ
+k	java:S117O"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( Óøÿÿÿÿ
+X
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813'"BRemove this field injection and use constructor injection instead.(êæÄŞ
+V	java:S1252"<This block of commented-out lines of code should be removed.(€¾Òıûÿÿÿÿ
+I
+java:S1481:".Remove this unused "orderlist" local variable.(ìÎ¥ªúÿÿÿÿ
+@	java:S106?"+Replace this use of System.out by a logger.(Ô²ûô
+E	java:S106A"+Replace this use of System.out by a logger.(ÖÜ§øÿÿÿÿ
+E	java:S106B"+Replace this use of System.out by a logger.(ÂõÕıÿÿÿÿ
+E	java:S106C"+Replace this use of System.out by a logger.(Ç›û‡úÿÿÿÿ
+E	java:S106R"+Replace this use of System.out by a logger.(åúïİùÿÿÿÿ
+4
+java:S1128"Remove this duplicated import.(ûúÄ®
